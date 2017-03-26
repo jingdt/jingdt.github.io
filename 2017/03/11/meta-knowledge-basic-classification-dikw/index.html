@@ -1,0 +1,667 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="前言
+在上一篇文章中对知识分类问题做了宏观意义上的描述，内容比较偏“虚”。从本篇开始包括后续几篇将对知识分类问题进一步展开，对主要的知识分类方式进行总结，内容比较“实”一些。注意，这些总结的内容对从事知识创造与知识管理、知识论相关领域的爱好者和研究者都属于“常识性”内容。笔者编写汇总这些内容的目的一方面是自己的学习总结，一方面是为对这个领域的爱好者和初学者提供一个入门参考。这些内容仅仅是一个极为浅">
+<meta property="og:type" content="article">
+<meta property="og:title" content="元知识基础：知识的DIKW模型">
+<meta property="og:url" content="http://detian.me/2017/03/11/meta-knowledge-basic-classification-dikw/index.html">
+<meta property="og:site_name" content="心智学徒">
+<meta property="og:description" content="前言
+在上一篇文章中对知识分类问题做了宏观意义上的描述，内容比较偏“虚”。从本篇开始包括后续几篇将对知识分类问题进一步展开，对主要的知识分类方式进行总结，内容比较“实”一些。注意，这些总结的内容对从事知识创造与知识管理、知识论相关领域的爱好者和研究者都属于“常识性”内容。笔者编写汇总这些内容的目的一方面是自己的学习总结，一方面是为对这个领域的爱好者和初学者提供一个入门参考。这些内容仅仅是一个极为浅">
+<meta property="og:image" content="http://ojfygn4is.bkt.clouddn.com/image/knowledge-dikw-model.png">
+<meta property="og:updated_time" content="2017-03-26T15:34:03.422Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="元知识基础：知识的DIKW模型">
+<meta name="twitter:description" content="前言
+在上一篇文章中对知识分类问题做了宏观意义上的描述，内容比较偏“虚”。从本篇开始包括后续几篇将对知识分类问题进一步展开，对主要的知识分类方式进行总结，内容比较“实”一些。注意，这些总结的内容对从事知识创造与知识管理、知识论相关领域的爱好者和研究者都属于“常识性”内容。笔者编写汇总这些内容的目的一方面是自己的学习总结，一方面是为对这个领域的爱好者和初学者提供一个入门参考。这些内容仅仅是一个极为浅">
+<meta name="twitter:image" content="http://ojfygn4is.bkt.clouddn.com/image/knowledge-dikw-model.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://detian.me/2017/03/11/meta-knowledge-basic-classification-dikw/"/>
+
+
+
+
+
+  <title> 元知识基础：知识的DIKW模型 | 心智学徒 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">心智学徒</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">读书 思考 写作，心智学徒的进化之路</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://detian.me/2017/03/11/meta-knowledge-basic-classification-dikw/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="德行天下">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="心智学徒">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="心智学徒" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                元知识基础：知识的DIKW模型
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-11T15:26:29+08:00">
+                2017-03-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>在上一篇文章中对知识分类问题做了宏观意义上的描述，内容比较偏“虚”。从本篇开始包括后续几篇将对知识分类问题进一步展开，对主要的知识分类方式进行总结，内容比较“实”一些。注意，这些总结的内容对从事知识创造与知识管理、知识论相关领域的爱好者和研究者都属于“常识性”内容。笔者编写汇总这些内容的目的一方面是自己的学习总结，一方面是为对这个领域的爱好者和初学者提供一个入门参考。这些内容仅仅是一个极为浅层的要点罗列，对每一个方面及之间的关系，其实是非常错综复杂的，善于思考的同学，可以针对某些点做更多深入的思考和探索。本篇主要对知识的DIKW（数据、信息、知识、智慧）层次模型进行说明。</p>
+</blockquote>
+<p>分类就是要对事物进行划分和切割，以便更好的认识事物。划分可以是横向的也可以是纵向的，DIKW体系就是以纵向视角对知识进行层次划分。DIKW将知识纳入人类不同的认知层级中进行考察，以明确知识所处的位置。对DIKW稍有了解的人应该知道DIKW一般表达为一个金字塔分层结构。具体来说，DIKW模型从下到上分别是数据（Data）、信息（Information）、知识（Knowledge）、智慧（Wisdom），如下图：</p>
+<p><img src="http://ojfygn4is.bkt.clouddn.com/image/knowledge-dikw-model.png" alt=""></p>
+<h1 id="数据（Data）"><a href="#数据（Data）" class="headerlink" title="数据（Data）"></a>数据（Data）</h1><p>我觉得可以把数据理解为人类认识世界的过程中所发明的各种符号体系。一般的观点认为，数据是没有意义的。我认为这样说并不准确，应该说符号的发明最开始一定是用于表达某种具有实际意义的思想或者知识。只是随着人类文明的发展，符号变得越来越抽象而脱离了最初的意义。这种脱离使得符号体系的运用变得更加广泛。比如数字“1”，在数学上，是一个抽象的数字，它没有和现实中的具体实物进行对应。但是人类祖先发明 1 这个符号的时候，一定是基于头脑中某个具体的事物，比如可能最初就是代表 1 只老虎。后来，随着人类理性的进化，才发现 1 这个符号可以从代表 1 只老虎中剥离，形成一个抽象的概念。比如 1 个苹果，1 个人，1 只笔，1 头牛等等。可见从发明符号 1 来代表具体事物到将 1 从具体意义中剥离形成一个抽象的 1 的概念的这个过程，完全可以称得上是人类进化史上的一场认知革命。</p>
+<h1 id="信息（Information）"><a href="#信息（Information）" class="headerlink" title="信息（Information）"></a>信息（Information）</h1><p>如前分析，数据是没有意义的符号，这个观点仅仅是后来才发生的。对于我们现在探讨知识的分类层级的问题，我们可以先持有数据是没有意义的符号这样的观点。而信息是比数据更高的一个层级，简单的可以把信息理解为对数据的解释，为数据赋予意义。所以从认知发生过程来看，实际上是经历了从有意义到无意义再到有意义的过程。比如数字39，从数据层面看仅仅是一个抽象的数字，它没有实际的具体的意义。当为数据赋予意义和解释时变成为了信息，如数据39表示一个人的体温，这个时候抽象的39具体化为一个人的体温。此时39度的体温变成了信息。数据信息化过程就是为数据赋予解释和意义的过程，是从抽象到具体的过程，它将抽象的符号和某个具体的其他事物连接在了一起。一条信息一般表达了一个事实陈述，它为更上一层的“知识”提供了原始素材。</p>
+<h1 id="知识（Knowledge）"><a href="#知识（Knowledge）" class="headerlink" title="知识（Knowledge）"></a>知识（Knowledge）</h1><p>信息的上一层是“知识”，知识是对信息的进一步加工整理，从众多信息中发现信息之间的关系，并提炼为规范化、体系化的结构。知识是行动导向、决策导向的，它可以直接指导一个人的行动和决策。比如面对39度的体温这个信息，如果具备了医学知识，就知道这一信息意味着此人发烧生病了。这就是一种知识，39度的体温不是一个人的正常体温，需要采取行动对其进行治疗。知识的核心作用是成为我们行动决策的依据。知识的形成是人类以大量的数据和信息为原始事实材料作为输入，这些材料的输入对象是人的思维，通过人的思维对这些材料进行加工处理之后产出的成果。这些成果可以对现有事实进行解释，以指导我们的行动，同时这些成果还可能成为另外一些知识领域的输入，在另一个领域对之进行加工后产生新的知识成果。就这样，数据、信息、知识之间形成一个人类理性思维加工处理的闭环，人类文明才得以发生和发展。</p>
+<h1 id="智慧（Wisdom）"><a href="#智慧（Wisdom）" class="headerlink" title="智慧（Wisdom）"></a>智慧（Wisdom）</h1><p>知识的上一层是“智慧”，智慧位于金字塔的顶端。关于什么是智慧，它和知识的区别和联系，如何获得智慧等问题是一个比较复杂的问题。笔者对此的理解还不成体系，比较肤浅。这里仅简单说一说。简单来说，<strong>可以把智慧理解为对知识的灵活整合和创造性运用</strong>。智慧的生成过程是知识的内化过程，它和一个人的隐性知识密切相关，是高度个性化的。</p>
+<h1 id="知识与智慧简单辨析"><a href="#知识与智慧简单辨析" class="headerlink" title="知识与智慧简单辨析"></a>知识与智慧简单辨析</h1><p>知识是死 的，智慧是活的，我们知道一个人可能学了很多知识，但在日常生活和行为方式中完全是一团糟，这就是没有将知识内化为智慧的表现。将知识置入特定的上下文场景并结合自身的思维灵活运用各种知识，并最终做出明智的判断、决策、行动才是智慧的表现。仅仅把头脑当着一个容器，不停的往里面塞五花八门的知识，而不经过思考、消化、酝酿、吸收是不可能产生智慧的。可以看出，智慧反而是最为“具体”的、个性化的，它需要因时、因地、因人综合做出分析判断，它无法象知识那样形成标准化的体系进行快速传播，它需要一个人的悟性参与，是一个生长过程。拿上面的例子来说，一个人表现的症状为39度发烧，有知识的人的行为可能是立即将其送医院进行治疗。而有智慧的人可能会根据当事人的身体特征及现场的具体情形做出不同的决策行动，而产生的结果比送医院治疗有效得多。智者的行为很多时候在普通人看来完全不可理解，和普通人的行为甚至完全相反。这是因为智者对知识的运用已经完全融会贯通，达到出神入化的境界。</p>
+<p>智慧和知识都和判断决策有关，但基于智慧的判断比基于知识的判断更高级。基于知识的判断选择比较单一，而基于智慧的判断选择是从大量的选择中结合具体的场景做出明智的选择，它对一个人的判断选择能力要求极高。东西方先哲对智慧的辨析还有一个共同点，就是智慧和“德行”相关，特别是在佛教中，佛教的观点是通过不断修正自己的行为（修行），就可以达到智慧的境界。这个过程和我们理解的不断的学习增长知识是没有关系的。关于知识与智慧的区别，还可以参考老子的一句话叫<strong>“为学日益，为道日损”</strong>。这里的“为学”就是知识层面，是一个做加法的过程；而”为道“就是智慧层面，是一个做减法的过程。老子关于“道”的智慧思想和佛教的“般若”智慧是完全一致的。</p>
+<h1 id="佛教中的般若智慧"><a href="#佛教中的般若智慧" class="headerlink" title="佛教中的般若智慧"></a>佛教中的般若智慧</h1><p>由于智慧这个东西实在让人太向往，这里对佛教里的般若智慧做一简单提示。我们一般人理解的智慧概念，虽然有一种高大上的感觉，但一般我们还是认为智慧本身和知识密切相关，把知识作为了智慧的重要构成要素。但在佛教里的般若智慧基本上和我们一般理解的知识没有关系，佛教的“般若”二字是音译，对于佛经中的很多内容，如果在中文中找不到合适对应的文字，则采用音译不翻译。“般若”就是其中之一，佛经翻译并没有把般若翻译为“智慧”，就是因为我们所说的智慧概念还不足以表达“般若”的深意。为了避免将般若理解为普通的智慧，宁愿采用音译而辅以解释。可见佛教里的般若是超越了普通智慧的大智慧，般若智慧的深意已经超越了语言文字。我们所说的科学知识再怎么深奥，还是可以通过语言和文字进行表达和传播的，而佛教讲的”般若“智慧是超越了世俗的科学知识范围。只能通过个人的修行去亲证。佛教中的般若还可以分为五个部分，包括：</p>
+<ul>
+<li>实相般若：形而上的“道体”。</li>
+<li>境界般若：人生有不同的境界。</li>
+<li>文字般若：某些人出口成章，文字行云流水。</li>
+<li>方便般若：将深奥的知识以不同个体容易理解的方式进行表达和传递。</li>
+<li>眷属般若：和六度相关（六度包括：布施、持戒、忍辱、精进、禅定、智慧）</li>
+</ul>
+<p>以上五个般若后的内容是我的简单理解，这些内容如果按照一般佛经的讲经形式，一个法师或者善知识来讲的话，可能会讲上十天半个月。这里笔者无力进行展开，本文的重点也不是讲佛教相关的内容。当以后自己有一点感悟之后再单独撰文进行阐述。有兴趣的同学可以去听一听或者看一些关于佛经般若部《金刚经》的内容。</p>
+<h1 id="DIKW各层之间的关系总结"><a href="#DIKW各层之间的关系总结" class="headerlink" title="DIKW各层之间的关系总结"></a>DIKW各层之间的关系总结</h1><p>基于金字塔模型的数据、信息、知识、智慧表达方式可以看出，越底层越具有普遍性和奠基性。1，2，3，a，b，c这些符号及相互组合构成的符号集合是趋于无穷多的。而对符号进行解释则让符号代表的意义具体化，使得符号和具体事务和现象关联。知识则是对数据和信息的系统整合之后形成的体系化规律和结构，知识可以直接指导行动。智慧则具有一定的神秘性，它和个人的内隐知识结合在一起，是对知识的灵活性和创造性运用。这四个概念之间的关系我总结了三个公式方便理解：</p>
+<ul>
+<li><p><strong>数据 + 思维加工处理 = 抽象科学知识</strong>：典型的如数学，数学通过研究抽象符号、数字、图形之间的关系形成了最为抽象而又最具适用性的科学工具，数学成为各门学科之父。</p>
+</li>
+<li><p><strong>信息 + 思维加工处理 = 经验科学知识</strong>：典型的如社会科学，通过大量收集各类信息和事实，并进行综合分析后，形成某个理论假说。这类知识和经验事实密切相关，其解释力不如纯抽象思维科学。</p>
+</li>
+<li><p><strong>知识 + 德行 = 智慧</strong>：智慧的概念比较难以理解，可能每个人对此理解不一致。我个人更倾向于佛教的般若智慧。这种<strong>智慧是大智 + 大悲的结合体</strong>。通俗一点说，有能力无德行的人，对社会可能是巨大的危害，这类人多了，只会让人类以正确的方式在错误的道路上加速死亡。而有意愿而无能力的人，面对种种困境只能束手无策，对人类社会没有实质性的贡献。中文中的智慧一词蕴含了知识作为基础要素，但在佛教中的”般若智慧“是超越了语言和文字不可言说的大智慧，它和科学知识无关，而与一个人的慧根深浅有关，它只能通过自身的修行去”亲证“，在世俗眼光看来它具有一定的神秘性。</p>
+</li>
+</ul>
+<p>在DIKW的层次结构中，还有个规律，就是从下到上是一个客观性逐渐降低，主观性逐渐增强的过程。数据的客观性最高，而智慧的主观性最高。最有价值的东西反而是主观性和个性化最强的东西，我们眼中的世界不是客观世界而是一个主观世界。智慧位于金字塔顶端，意味着智慧最为稀少，而智慧又是个性化和内隐化的，因此悟道成佛的人极少就不难理解了。</p>
+<p>可见盲目的学习增长知识并不是我们的最终目的，<strong>我们的最终目的是转识成智，我们要“吃”知识，”长“智慧。</strong>而健康的吃，必须结合个人的身体特质有所过滤和选择，才能让我们获得健康的身体。我们的”色身“需要饮食的滋养，而我们的”法身“需要”智慧“的滋养，要获得智慧，同样需要对精神营养有所判断、选择和过滤。</p>
+<p>最后，结合文中 39 度发烧的例子，可以将 DIKW 总结阐述为：在数据层面 39 仅仅代表一个没有意义的符号；在信息层面 39 代表某人的当前的体温；在知识层面，39 度的体温意味着身体异常应采取治病措施；在智慧层面，结合当时的实际情形和个体差异，面对39度的高烧采取的可能措施是：不做任何处理，而这种不处理是当时众多选择中的最佳选择。</p>
+<h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><blockquote>
+<p>本文是笔者结合自身的理解对知识分类的纵向DIKW层次模型进行了简要阐述。主要目的是认清所谓的“知识”在这个模型中所处的位置。我们学习知识的终极目的是获得“智慧”，而智慧的获得不是单纯的对知识做加法，还需要在德行方面结合个人修行做减法。由于智慧是我们终极追求，文中对于般若智慧的阐述引入了部分佛教概念。这些概念比较基础，可参考搜索一些基础的佛法知识。下一篇将对知识分类的另一个视角：“显性知识和隐性知识”的概念和关系展开总结和探讨。</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/04/meta-knowledge-classification-overview/" rel="next" title="元知识基础：知识分类概述">
+                <i class="fa fa-chevron-left"></i> 元知识基础：知识分类概述
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/23/the-definition-of-knowledge/" rel="prev" title="元知识基础：知识的定义">
+                元知识基础：知识的定义 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="德行天下" />
+          <p class="site-author-name" itemprop="name">德行天下</p>
+          <p class="site-description motion-element" itemprop="description">读书 思考 写作，心智学徒的进化之路</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据（Data）"><span class="nav-number">2.</span> <span class="nav-text">数据（Data）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#信息（Information）"><span class="nav-number">3.</span> <span class="nav-text">信息（Information）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#知识（Knowledge）"><span class="nav-number">4.</span> <span class="nav-text">知识（Knowledge）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#智慧（Wisdom）"><span class="nav-number">5.</span> <span class="nav-text">智慧（Wisdom）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#知识与智慧简单辨析"><span class="nav-number">6.</span> <span class="nav-text">知识与智慧简单辨析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#佛教中的般若智慧"><span class="nav-number">7.</span> <span class="nav-text">佛教中的般若智慧</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DIKW各层之间的关系总结"><span class="nav-number">8.</span> <span class="nav-text">DIKW各层之间的关系总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后语"><span class="nav-number">9.</span> <span class="nav-text">后语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">德行天下</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
