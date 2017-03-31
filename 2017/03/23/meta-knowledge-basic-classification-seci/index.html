@@ -1,0 +1,703 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="前言
+在上一篇文章中以纵向角度对知识的 DIKW 层次模型进行了回顾，本篇以内外、主客角度对知识的显性知识、隐性知识进行介绍。其中隐性知识是本文的重点。通过对隐性知识这一概念的深入剖析，对我们的学习有很大的启发意义。关于元知识几篇文章的内容都属于知识创造与知识管理的基本理论和概念，在回顾这些内容时，需要结合自身经验和行动反复思考和理解，只有对这些元知识充分内化为自己的内隐知识才能对实践产生良好的指">
+<meta property="og:type" content="article">
+<meta property="og:title" content="元知识基础：显性知识、隐性知识与SECI模型">
+<meta property="og:url" content="http://detian.me/2017/03/23/meta-knowledge-basic-classification-seci/index.html">
+<meta property="og:site_name" content="心智学徒">
+<meta property="og:description" content="前言
+在上一篇文章中以纵向角度对知识的 DIKW 层次模型进行了回顾，本篇以内外、主客角度对知识的显性知识、隐性知识进行介绍。其中隐性知识是本文的重点。通过对隐性知识这一概念的深入剖析，对我们的学习有很大的启发意义。关于元知识几篇文章的内容都属于知识创造与知识管理的基本理论和概念，在回顾这些内容时，需要结合自身经验和行动反复思考和理解，只有对这些元知识充分内化为自己的内隐知识才能对实践产生良好的指">
+<meta property="og:updated_time" content="2017-03-31T08:21:11.178Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="元知识基础：显性知识、隐性知识与SECI模型">
+<meta name="twitter:description" content="前言
+在上一篇文章中以纵向角度对知识的 DIKW 层次模型进行了回顾，本篇以内外、主客角度对知识的显性知识、隐性知识进行介绍。其中隐性知识是本文的重点。通过对隐性知识这一概念的深入剖析，对我们的学习有很大的启发意义。关于元知识几篇文章的内容都属于知识创造与知识管理的基本理论和概念，在回顾这些内容时，需要结合自身经验和行动反复思考和理解，只有对这些元知识充分内化为自己的内隐知识才能对实践产生良好的指">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://detian.me/2017/03/23/meta-knowledge-basic-classification-seci/"/>
+
+
+
+
+
+  <title> 元知识基础：显性知识、隐性知识与SECI模型 | 心智学徒 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">心智学徒</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">读书 思考 写作，心智学徒的进化之路</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://detian.me/2017/03/23/meta-knowledge-basic-classification-seci/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="德行天下">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="心智学徒">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="心智学徒" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                元知识基础：显性知识、隐性知识与SECI模型
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-23T22:59:00+08:00">
+                2017-03-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>在上一篇文章中以纵向角度对知识的 DIKW 层次模型进行了回顾，本篇以内外、主客角度对知识的显性知识、隐性知识进行介绍。其中隐性知识是本文的重点。通过对隐性知识这一概念的深入剖析，对我们的学习有很大的启发意义。关于元知识几篇文章的内容都属于知识创造与知识管理的基本理论和概念，在回顾这些内容时，需要结合自身经验和行动反复思考和理解，只有对这些元知识充分内化为自己的内隐知识才能对实践产生良好的指导作用。对于这些常识性内容，网上和书籍中有大量详细的介绍，笔者为什么还要来复述一遍呢，就是因为显性知识必须经过自己的消化吸收，和自己已有的经验和知识产生关联，才能内化变为自己的知识。</p>
+</blockquote>
+<h1 id="显性知识"><a href="#显性知识" class="headerlink" title="显性知识"></a>显性知识</h1><p><strong>所谓显性知识是指哪些可以被人类以一定符号系统进行编码后加以完整表述的知识。</strong></p>
+<p>典型的符号系统包括语言、数学公式、文字、图像、各类图表、手势、盲文等。显性知识很容易理解，因为我们平时所说的知识一般就是指显性知识，我们上学学习的公式、定理、方程、模型都是显性知识。显性知识具有的几个特点：</p>
+<ul>
+<li><p><strong>可编码</strong>：可通过符号和编码技术对其进行编码和表示。</p>
+</li>
+<li><p><strong>可存储</strong>：被编码后的知识可存储在不同的介质中。如文档、书籍、光盘、磁盘等介质。</p>
+</li>
+<li><p><strong>易于获得</strong>：自从古登堡 15 世纪发明活字印刷技术后，人类在短短 500 年左右的时间内，创造了极其灿烂辉煌的文明成果。这些成果主要就是以书籍为媒介的显性知识方式被一代代积累起来。到了如今的互联网时代，更是呈现爆炸式增长。显性知识本身不再有任何稀缺性，相反它的海量和繁杂给现代人制造了一种“知识焦虑”的“病症”。</p>
+</li>
+<li><p><strong>易于传播和转移</strong>：从印刷术到互联网，显性知识的传播跨越了时间和空间，其传播效率已经达到极致。显性知识的传播过程能保持知识的完整性，不会失真。</p>
+</li>
+<li><p><strong>客观性</strong>：显性知识具有较高的客观性和稳定性，如代表硬科学的数学、物理学等知识属于客观稳定的知识，在一个较长的时间内都会保持稳定，显性知识的客观性还表现在其知识成分不以人的主观意志为转移和改变。</p>
+</li>
+</ul>
+<h1 id="隐性知识"><a href="#隐性知识" class="headerlink" title="隐性知识"></a>隐性知识</h1><p>和显性知识相比，隐性知识就不那么直观和容易理解。<strong>所谓隐性知识就是哪些存在于个人头脑中无法通过规范化方式进行传播的个性化知识</strong>。隐性知识是哪些我们知道但难以言传的知识。这是本文讨论的重点。</p>
+<h2 id="源头"><a href="#源头" class="headerlink" title="源头"></a>源头</h2><p>隐性知识这一概念的提出时间很短，我们过去一直认为所谓知识只有一种可以表示的客观的显性知识。隐性知识这一概念的源头是由匈牙利哲学家，政治经济学家，物理化学家卡尔·波兰尼（Karl Polanyi）于 1958 年在其哲学著作《个人知识：迈向后批判哲学》中首次提出的。这本书属于认识论、知识论哲学范畴，普通人没有较高的科学和哲学素养很难读懂个大概。这本书本身也是个近 50 万字的大部头，全面体现了波兰尼的哲学思想，虽然在科学哲学领域，波兰尼的影响力可能没有波普尔、库恩那么大，但作为知识论的研究者和爱好者应该对此书有深入研究，结合我们这个时代的知识焦虑病症，深入研读该书可能会带给我们符合时代需求的极高价值。笔者目前无力系统深入研读此书，只是简单翻了翻，结合隐性知识概念的哲学源头，我从该书的译者序中摘录部分体现波兰尼知识观的内容，我们可以从中一窥波兰尼关于“个人知识”哲学思想的思考出发点。</p>
+<blockquote>
+<p>波兰尼认为传统的基于客观主义的科学观或知识观可以追溯到洛克和休谟的身上，并以其大规模的“现代荒唐性”几乎统治了 20 世纪的科学思维；这种见解实际上是一种错觉，是一种虚假的理想。根据他的观点，识知（knowing，即知识的获得）是对被知事物的能动领会，是一项负责任的、声称具有普遍效力的行为。知识是一种求知寄托。</p>
+<p>波兰尼认为，知识是一种要求技能的行为，是一种艺术；在每一项这样的行为中，都具有一个知道什么正在被识知的人的热情洋溢的贡献，即正在识知的人的“无所不在的”个人参与。知识具有内在的美，人们对知识的追求正是对这种美的追求。这是知识的理性内核。这并不是一种美中不足，也不仅仅是心灵的副产品；它是具有逻辑功能的，是知识的一个有机和必要的组织部分；它相当于一个科学命题中的一种基本性质。但是，传统的知识观是以主客观相分离为基础的，它追求的是把这些热情的、个人的、人性的成分从知识中清除。波兰尼认为这种做法是要不得的，这样做只能给人们的知识观带来混乱和恶果。据他观察，即使在诸精密科学中，甚至在个人成分量少的经典力学这一所谓“最接近于完全超脱的自然科学”的领域，知识的获得也要求科学家的热情参与，要依赖科学家的技能和个人判断，更不要说在生物学、医学、生理学、心理学这样的“主观性”显然强得多的科学领域了。波兰尼相信，没有科学家纯粹的科学兴趣，没有科学家充满热情的参与，没有科学家把其一生精力的一点一滴作为赌注般的投入，任何具有重大意义的科学发现（知识）都是不可能取得的。</p>
+</blockquote>
+<p>从波兰尼的思想观点出发，自然导出他对不可言说的隐性知识及和显性知识之间的关系的深入分析。在波兰尼看来，知识不是纯客观的，也不是主观的，而是客观性和个人性的结合，知识是一种求知寄托，是一种艺术，这就是他所说的“个人知识”。</p>
+<p>就哲学思辨这个层面来说，我个人比较赞同的观点是科学知识的发展不是一个越来越客观的过程，而是一个越来越主观化的过程。比如神秘的量子物理已经把“意识”问题引入了物理学讨论，还有追求宇宙终极理论之梦的“超弦理论”。这些东西已经远远超出了一般人能理解的范围，成为了极少数人头脑中的“思想游戏”。科学知识越来越主观，越来越玄幻，我们的人生真相可能真的就是一场虚拟现实的游戏。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>隐性知识的特点可以和显性知识作一对照就更容易理解。</p>
+<ul>
+<li><p><strong>难以言传</strong>：即便是通过语言也很难准确的对隐性知识进行表达，我们知道的比我们能言说的多。</p>
+</li>
+<li><p><strong>难以编码</strong>：隐性知识很难象显性知识那样通过明确的规则进行符号化编码。</p>
+</li>
+<li><p><strong>难以传播</strong>：因为难以规范化编码，所以难以通过书籍等介质实现大规模传播。</p>
+</li>
+<li><p><strong>个人化</strong>：如果说隐性知识有什么存储介质的话，只能是个人的大脑及身体。</p>
+</li>
+</ul>
+<p>隐性知识的上述特点决定了其特殊性。回到现实，结合一些例子就很容易理解。隐性知识的典型代表就是“技能性知识”的习得。比如游泳、骑车、语言、舞蹈等等。比如对于学骑车这件事，你不可能仅仅通过别人的语言或者显性知识就能立即学会，你只能通过自身大量练习和实践才可能学会。而当你学会的那天，你不可能对别人说我是通过掌握了平衡原理或者牛顿力学原理学会了骑车，你自己很难表达出你是怎么学会的。通过大量的练习，不知不觉中这些技能及外物成为了你身体的一部分。技能的习得这种体验我想每个人都有亲身体会。</p>
+<p>那么，我们不禁要问技能性知识的学习从不会到会再到自动化的过程，我们的头脑和身体究竟发生了什么？从神经科学的研究看，这个过程其实就是神经元的重塑过程，是神经元的重新布线过程。神经可塑性这一科学发现让我们欣慰，它驳斥了传统太过强调天赋能力的智力观。</p>
+<p>实践技能很强的知识的隐性特点比较容易理解，那么对于偏向理性计算的数学类知识的学习是否有隐性特点呢。我认为本质是一样的，理论知识的真正学会掌握过程，也是一个重塑神经元的过程，差异是理论知识的习得更多的是在头脑中建立心理表征，更多的是思维层面的练习。比如对于孩子数学的学习，我们可能讨厌题海战术，但是它确实是有效果的。而技能性知识的习得，除了心理表征的建立，还有身体各部位的协调配合，身体的练习最终形成了肌肉记忆。</p>
+<p>从以上表述分析中，我们就可以知道如今被推崇的“刻意练习”理论的合理之处。因为它符合知识从外在的、他人的、显性的转换为内在的、个人的、隐性的一般原理。</p>
+<h2 id="展开"><a href="#展开" class="headerlink" title="展开"></a>展开</h2><p>一个哲学思想概念的威力就在于，它是根基、是种子，它决定了未来长成果实的性状。有人在脚下的土地中种下一粒种子，然后付出毕生的心血在那里精细呵护。随后引来一群人的围观，围观的人中有人不看好它的未来而选择了离去，而有的人或因为感动或因为个人兴趣而选择了留下并参与了进来，在一群人甚至一代代人的长时间努力下，当初的种子最终长成参天大树。从哲学思想到科学技术的发展过程，就是这样一个过程，哲学家撒下思想和观念的种子，科学家按其自身的偏好进行选择、维护、建设，最终长成人类文明的繁茂森林。</p>
+<p>波兰尼提出的隐性知识这一概念也是一样，这一概念如今已经被普遍接受。波兰尼之后有大量的专家学者对其进行了展开和分析，虽然相比而言目前还算不上参天大树，但也看到了它的显著成长，取得了一些成果。隐性知识概念的主要影响力在知识创造及知识管理相关领域。下面选择几个有影响力的学者，看看他们是如何理解隐性知识的，从中可以加深我们的理解。</p>
+<ul>
+<li><p><strong>哈耶克：</strong>哈耶克从法理学和经济学的视角作出“阐明的规则”（articulated rules）和“未阐明的规则（non-articulated rules）的区分。所谓“未阐明的规则”是那些尚未或难以用语言和文字加以阐明、但实际上为人们所遵循着的规则。哈耶克认为“我们的习惯及技术、我们的偏好和态度、我们的工具以及我们的制度”等构成了“我们行动基础的“非理性”的因素(non-rational factors)”，这些知识就是“隐性知识” （tacit knowledge）。</p>
+</li>
+<li><p><strong>斯滕伯格：</strong> 隐性知识是以行动为导向的知识，它的获得一般不需要他人帮助，能使个体达到个人追求的目标。</p>
+</li>
+<li><p><strong>野中郁次郎：</strong>隐性知识是高度个人化的知识，很难规范化，不易传递给其他人。（日本学者野中郁次郎在知识管理领域有很大的贡献，其 SECI 模型非常有用，我将在下一篇中进行回顾）</p>
+</li>
+<li><p><strong>彼得·德鲁克：</strong>隐性知识是不可用语言来解释的，只能被演示证明它是存在的，学习隐性知识的唯一方法是领悟和练习。</p>
+</li>
+</ul>
+<p>这些知名学者在其自己的著作中对隐性知识有更详细的论述，有兴趣可进一步查阅相关资料。关于隐性知识结合上面的分析，还有个重要的分类方式需要说明。就是从认识对象和认识模式的角度，可以把隐性知识进一步分为：</p>
+<ul>
+<li><p><strong>技能技巧：</strong>如前所述，指的是那些难以用语言表述的诀窍、技巧、经验，它是高度个人化的。</p>
+</li>
+<li><p><strong>心智模式：</strong>心智模式的隐性知识包括洞察力、思维模式、直觉、感悟、价值观、团队的默契和组织文化等。心智模式可以说才是隐性知识的核心。而要优化心智模式又必须借助于“元认知”工具。（关于心智模式和元认知，如果展开来说，内容就非常多了。后续再单独编写文章进行回顾。）</p>
+</li>
+</ul>
+<h1 id="获得的启发"><a href="#获得的启发" class="headerlink" title="获得的启发"></a>获得的启发</h1><p>通过对两种知识的分析，回到现实，对我们有何启发呢。对我自己而言就学习方面有几点启发：</p>
+<ul>
+<li><p><strong>学习不完全是一个快乐的事情：</strong>我们平时听到的观点可能是学习应该是一件很快乐的事情。通过隐性知识的分析，我们应该知道要获得真知，要真正内化为自己的知识，这可不是一个简单的过程。需要经过大量的甚至枯燥的练习。所以，如果你的学习过程一直都是一种很舒服的状态，就要小心了，这基本上属于无效学习。因为你停留在舒适区，这种学习行为等同于娱乐消遣行为。你必须不停的突破舒适区，你的能力才会真正增长。</p>
+</li>
+<li><p><strong>在行动中学习：</strong>这里的行动，我定义为广义的行动。就是包括了身体行动和思想行动。对于技能性知识需要大脑和身体并用，这是一种行动。而对于纯思维理论性知识，你需要大量思想、思维上的行动，也属于行动。本质上都是通过行动进行反思、反馈，最终形成心理表征并重塑神经元。什么是无效行动呢，对于技能知识的无效行动是身体在动、大脑未动，未将全身心的热情投入其中。对于显性理论知识学习的无效行动是指懒于思考，不启用自己的元认知能力，而是一味的幻想美好的结果。正如波兰尼的观点，无论何种知识的获得，个人的专注、好奇、热情都是必不可少的重要组成要素。</p>
+</li>
+<li><p><strong>通过交流向他人学习：</strong>既然隐性知识是存在于个人的头脑之中，那么通过和他人进行沟通交流就是学习隐性知识的一种有效方法。这里要注意的是，当我们向别人学习的时候，需要保持谦卑的心态，需要持有对他人的信任。这也是为什么所有的传统技艺只能通过师徒制方式进行传承的原因。我们知道很多传统技艺徒弟拜师学艺，师傅并不会一开始就言传身教技艺本身的内容，而是让徒弟干几年和手艺毫不相关的脏活累活。这其实就是在磨练一个人的心性，让徒弟能保持空杯心态以绝对的信任和信念去向师傅学习。如果徒弟象我们一般人认为的那样小聪明，整天琢磨瞎想不停追问师傅各种为什么，那这徒弟实际上是很难学好这门手艺的。作为徒弟应该少问为什么，你只需要保持信念按师傅的每个细节照做就行了。<strong>这对我们都是一个提醒：在对一件事情没有深刻的领悟之前，最好不要对其进行妄加猜猜和评论。特别是不要将基于无知的、带有极强情感宣泄的观点传播给他人，这对自己和他人都是危害。</strong>（当然，这里隐含一个矛盾是无知者通常不知道自己无知）</p>
+</li>
+</ul>
+<h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><blockquote>
+<p>本文一开始本来是打算对显性知识、隐性知识有个基本介绍后，再对野中郁次郎的知识转换模型 SECI 进行复习。结果啰里啰嗦下来搞大了篇幅，那就把 SECI 放到下一篇来介绍，刚好也能凑个篇数。</p>
+<p>显性知识内化为我们的个人知识才是我们学习的关键目标。对于传统的师徒制传承模式的各种手艺我们应该抱有极大的尊重和保护。而我们不论学习什么知识，不论向谁学习，都应该保持谦卑、信任、好奇、热情，将心注入其中。</p>
+<p>最后以波兰尼看到的试图用工业化技术代替传统手艺的景象，所发出的感叹之语作为本文结束。<strong>看着今天以漫无休止的努力用显微镜和化学、用数学和电子学仿制着清一色的与二百年前那位半文盲的斯特拉迪瓦里作为日常工作制作出来的相似的小提琴，这情景真有点使人伤感。</strong>（注：斯特拉迪瓦里是一位传奇的、技艺非凡的、充满感性和洞察力的制琴师和艺术家。）</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/11/meta-knowledge-basic-classification-dikw/" rel="next" title="元知识基础：知识的DIKW模型">
+                <i class="fa fa-chevron-left"></i> 元知识基础：知识的DIKW模型
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/30/meta-knowledge-basic-classification-seci2/" rel="prev" title="meta-knowledge-basic-classification-seci">
+                meta-knowledge-basic-classification-seci <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="德行天下" />
+          <p class="site-author-name" itemprop="name">德行天下</p>
+          <p class="site-description motion-element" itemprop="description">读书 思考 写作，心智学徒的进化之路</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显性知识"><span class="nav-number">2.</span> <span class="nav-text">显性知识</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#隐性知识"><span class="nav-number">3.</span> <span class="nav-text">隐性知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#源头"><span class="nav-number">3.1.</span> <span class="nav-text">源头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特点"><span class="nav-number">3.2.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#展开"><span class="nav-number">3.3.</span> <span class="nav-text">展开</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#获得的启发"><span class="nav-number">4.</span> <span class="nav-text">获得的启发</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后语"><span class="nav-number">5.</span> <span class="nav-text">后语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">德行天下</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
