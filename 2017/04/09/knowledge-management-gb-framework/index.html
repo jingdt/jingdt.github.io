@@ -1,0 +1,729 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="前言
+前面几篇文章对知识的分类问题进行了介绍，这些内容都是为知识管理打一个基础。当今社会正在进入知识经济时代，知识正在逐渐成为组织和个人取得竞争优势的关键因素。将知识作为智力资产进行有效的组织和管理成为越来越多的企业和个人所关注的问题。笔者也算是一个刚起步的探索者。在笔者探索的过程中，发现在知识管理这一领域中，还存在一个“国家标准”，这一标准虽然是针对企业的，但是在通用概念层面对个人也有一定参考价">
+<meta property="og:type" content="article">
+<meta property="og:title" content="知识管理国家标准解读 - 框架部分">
+<meta property="og:url" content="http://detian.me/2017/04/09/knowledge-management-gb-framework/index.html">
+<meta property="og:site_name" content="心智学徒">
+<meta property="og:description" content="前言
+前面几篇文章对知识的分类问题进行了介绍，这些内容都是为知识管理打一个基础。当今社会正在进入知识经济时代，知识正在逐渐成为组织和个人取得竞争优势的关键因素。将知识作为智力资产进行有效的组织和管理成为越来越多的企业和个人所关注的问题。笔者也算是一个刚起步的探索者。在笔者探索的过程中，发现在知识管理这一领域中，还存在一个“国家标准”，这一标准虽然是针对企业的，但是在通用概念层面对个人也有一定参考价">
+<meta property="og:image" content="http://ojfygn4is.bkt.clouddn.com/image/knowledge-concept-model.png?v=2">
+<meta property="og:image" content="http://ojfygn4is.bkt.clouddn.com/image/knowledge-process-model.png">
+<meta property="og:updated_time" content="2017-04-11T15:33:14.893Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="知识管理国家标准解读 - 框架部分">
+<meta name="twitter:description" content="前言
+前面几篇文章对知识的分类问题进行了介绍，这些内容都是为知识管理打一个基础。当今社会正在进入知识经济时代，知识正在逐渐成为组织和个人取得竞争优势的关键因素。将知识作为智力资产进行有效的组织和管理成为越来越多的企业和个人所关注的问题。笔者也算是一个刚起步的探索者。在笔者探索的过程中，发现在知识管理这一领域中，还存在一个“国家标准”，这一标准虽然是针对企业的，但是在通用概念层面对个人也有一定参考价">
+<meta name="twitter:image" content="http://ojfygn4is.bkt.clouddn.com/image/knowledge-concept-model.png?v=2">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://detian.me/2017/04/09/knowledge-management-gb-framework/"/>
+
+
+
+
+
+  <title> 知识管理国家标准解读 - 框架部分 | 心智学徒 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">心智学徒</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">读书 思考 写作，心智学徒的进化之路</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://detian.me/2017/04/09/knowledge-management-gb-framework/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="德行天下">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="心智学徒">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="心智学徒" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                知识管理国家标准解读 - 框架部分
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-09T21:24:44+08:00">
+                2017-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>前面几篇文章对知识的分类问题进行了介绍，这些内容都是为知识管理打一个基础。当今社会正在进入知识经济时代，知识正在逐渐成为组织和个人取得竞争优势的关键因素。将知识作为智力资产进行有效的组织和管理成为越来越多的企业和个人所关注的问题。笔者也算是一个刚起步的探索者。在笔者探索的过程中，发现在知识管理这一领域中，还存在一个“国家标准”，这一标准虽然是针对企业的，但是在通用概念层面对个人也有一定参考价值。本文是对知识管理国家标准及标准解读宣讲教材的要点介绍，根据这些要点可以进一步展开并将之应用到个人知识管理的实践中。</p>
+<p>注：对知识管理国家标准的解读目的仅仅是为个人知识管理提供参考，其解读内容是以标准为范围。由于标准是针对企业的，所以解读本身重点不会在个人层面进行展开。针对个人的知识管理体系笔者认为会有较大的不同，这本身是一个需要重点探讨的主题，针对个人知识管理的问题随着笔者认识的加深后续会单独撰文进行阐述和探讨。</p>
+</blockquote>
+<h1 id="标准概况"><a href="#标准概况" class="headerlink" title="标准概况"></a>标准概况</h1><p>知识管理国家标准的编号是 GB/T 23703。标准是由中国标准化研究院牵头，蓝凌、北京智识、西门子、拓尔思等知识管理软件及咨询服务提供商和相关专家共同起草。已经正式发布的包括六部分：<strong>框架、术语、组织文化、知识活动、实施指南、评价</strong>。上述六部分中，除了“框架”部分是 2009 发布的外，其他部分均是在 2011 年 1 月 14 发布并于 2011 年 8 月 1 日实施。除了正式发布的六部分，还有两部分处于征求意见稿状态，分别是第 7 部分<strong>“知识分类通用要求”</strong>和第 8 部分<strong>“知识管理系统功能构件”</strong>。</p>
+<p>标准的八部分内容在网上均可以找到，但其内容本身是比较抽象、简洁的，篇幅也非常简短，如果对知识管理领域缺乏了解，在没有专业人士的进一步解读情况下，要想直接从标准文本中获得可直接指导实践的信息是很有限的。中国标准化研究院也意识到了这个问题，并为此专门组织相关专家针对标准编写了解读指南：《知识管理良好实践指南 – GB/T 23703 知识管理国家标准解读》。这本指南是对标准的进一步展开和解读，其参考价值更大一些。本文及后续主要以此指南的内容为参照结合部分自己的理解对标准进行介绍。</p>
+<h1 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h1><p>“框架”部分为知识管理国家标准的第一部分。这部分的内容主要是对知识管理的基本概念与术语、知识管理的目标、实施原则、知识管理模型、知识活动及知识管理支持要素等进行了说明。</p>
+<p>框架部分以目标、概念、模型为核心为知识及知识管理活动描述了一个总体的结构。有了这部分的认识就可以对知识管理所涉及的主要内容有一个全局的把控。然后可以根据组织及个人的现状和兴趣对某些点进行针对性的深入探索。</p>
+<h2 id="知识管理的基本概念"><a href="#知识管理的基本概念" class="headerlink" title="知识管理的基本概念"></a>知识管理的基本概念</h2><h3 id="知识的定义"><a href="#知识的定义" class="headerlink" title="知识的定义"></a>知识的定义</h3><p>在哲学层面，知识的定义问题是一个大问题，是非常复杂的。可以说任何问题，如果站在哲学角度追寻其“定义”问题，就将成为一个“没完没了”的问题。但哲学的价值正是在这种不断追究终极的反思精神中催生了枝繁叶茂的科学知识，人类社会才得以走到今天。</p>
+<p>这里不讨论知识的哲学定义问题，在知识管理领域，以哲学、经济学、信息学、企业管理不同的领域视角对知识都有不同的定义。在知识管理国家标准中对不同视角进行了综合，将知识定义为<strong>“通过学习、实践或探索所获得的认识、判断或技能。”</strong>在这个定义中解释了知识的获取方式、知识的本质和内涵。</p>
+<p>在知识管理领域，以经济学视角看待知识也具有代表性，企业<strong>将知识看着一种资产</strong>，智力资产、智慧资产、智力资本都是讲知识看着一种资本、财富，<strong>知识与有形资产（如机器、材料、厂房等）一样，作为一种资产进行管理</strong>。上述定义中认识的结果、判断的思维形式、思维方法、实践经验和技能都可以视为组织或个人的资产来进行管理。由于知识分为显性知识和隐性知识，所以对知识资产的管理不仅仅包括对显性知识的管理，更重要的是包括对承载隐性知识的“人”的管理。</p>
+<h3 id="知识的特性"><a href="#知识的特性" class="headerlink" title="知识的特性"></a>知识的特性</h3><ul>
+<li><p><strong>知识具有稳定性</strong>：适用于不同时间、地点、人等外在条件，知识具有一定的稳定性，才保证了知识的可以共享、沉淀、传播。特别是科学理论知识，其稳定性表现在对不同时空条件下的高度适用性。</p>
+</li>
+<li><p><strong>知识具有抽象性</strong>：知识不象工具、人员、资金等其他实物资源有很具体的对象。知识具有虚拟想象性质。知识以不同的载体形式存在，具有一定抽象性，使得对其进行管理比较复杂，有一定难度。</p>
+</li>
+<li><p><strong>知识具有价值性</strong>：显然，对于知识经济背景下的组织和个人来说，知识是最有价值的资产，是组织和个人的核心竞争力。</p>
+</li>
+<li><p><strong>知识具有增值性</strong>：知识的增值性表现在知识在传播使用的过程中，会不断被丰富和充实。它不象固定资产会因人的使用、磨损而贬值。知识资产会因不断使用而不断积累、丰富和完善，越经得起实践检验的知识，越有价值。</p>
+</li>
+<li><p><strong>知识具有资源性</strong>：在知识经济背景下，知识的资源性体现在它在经济发展中所占有的比重与创造的价值呈上升趋势。这在高新技术产业、互联网等领域尤为突出。</p>
+</li>
+<li><p><strong>知识具有波粒二象性</strong>：参考物理学对光的认识，维娜 . 艾莉对知识的这一提法很有洞见和价值。知识的二象性表现在<strong>作为实体的知识和作为过程的知识</strong>。当我们对知识进行组织、分类时，知识具有实体性，它可以通过信息技术对其进行编码、存储。实物有所有权，类似的作为实体的知识的所有权表现为“知识产权”。作为过程的知识是以动态视角来看待知识，这种过程性体现在对知识的共享、创造、应用等活动中。知识正是在人与人、人与组织之间的持续流动过程中不断向前发展和更新的。知识的实体性和过程性构成了一静一动的有机统一体，我们如何看待知识的性状，依赖于我们当时所处的上下文背景，依赖于知识与我们的目标和行为的关系。</p>
+</li>
+</ul>
+<h3 id="知识的分类"><a href="#知识的分类" class="headerlink" title="知识的分类"></a>知识的分类</h3><p>知识的分类问题我们已经单独撰文详细回顾过 DIKW 模型、显性知识与隐性知识、OECD 的分类。可参考下面的几篇文章：</p>
+<ul>
+<li><a href="http://detian.me/2017/03/11/meta-knowledge-dikw/">知识的DIKW模型</a></li>
+<li><a href="http://detian.me/2017/03/23/meta-knowledge-explicit-tacit/">显性知识与隐性知识</a></li>
+<li><a href="http://detian.me/2017/03/30/meta-knowledge-seci/">知识转化的 SECI 模型</a></li>
+<li><a href="http://detian.me/2017/04/03/meta-knowledge-classification-oecd-others/">OECD对知识的分类及其他</a></li>
+</ul>
+<p>在框架部分对这些分类都有提到，可参考上面单独的文章查看更详细的介绍。除了这些分类，由于知识管理国家标准是针对企业组织的，因此在知识分类描述中还增加了另一个分类视角：按知识域分类。根据知识的来源分为组织的内部知识和外部知识。内部知识指组织内支持业务运作所需的知识（核心技术、生产流程、销售渠道、客户服务）。外部知识是指与组织自身发展密切相关的外部组织或个人的知识（供应商、合作伙伴、媒体、政府）。</p>
+<h3 id="知识管理"><a href="#知识管理" class="headerlink" title="知识管理"></a>知识管理</h3><p>标准中对知识管理的定义：<strong>知识管理是对知识、知识创造过程、知识的应用进行规划和管理的活动。</strong>该定义包括了两大管理对象：</p>
+<ul>
+<li><p><strong>对知识本身的管理</strong>：包括知识在组织中的战略定位、总体规划、组织机构、沟通协调、实施和建设、评价和改进工作。对知识本身的管理主要是将知识作为组织的战略性资源进行系统规划和管理。</p>
+</li>
+<li><p><strong>对知识活动的管理</strong>：对知识的鉴别、获取、创造、共享、存储、应用等知识活动的规划和管理。</p>
+</li>
+</ul>
+<h3 id="管理体系"><a href="#管理体系" class="headerlink" title="管理体系"></a>管理体系</h3><p>管理体系是指建立方针和目标并实现这些目标的体系（或称为系统）。在标准中对知识管理体系原则采用的是基于 ISO 9000 标准化管理体系原则，主要包括：</p>
+<ul>
+<li>系统方法论</li>
+<li>重视领导作用</li>
+<li>全员参与</li>
+<li>持续改进</li>
+</ul>
+<h2 id="知识管理的目标"><a href="#知识管理的目标" class="headerlink" title="知识管理的目标"></a>知识管理的目标</h2><p>不同的个人和组织对于实施知识管理的目标可能不尽相同，但大部分组织的知识管理目标主要可以总结为如下几个方面。这些目标也完全可以迁移到个人知识管理领域。</p>
+<ul>
+<li>实现组织的可持续发展</li>
+<li>提高员工素质及工作效率</li>
+<li>增强用户满意度</li>
+<li>提升组织的运作绩效</li>
+</ul>
+<h2 id="知识管理的实施原则"><a href="#知识管理的实施原则" class="headerlink" title="知识管理的实施原则"></a>知识管理的实施原则</h2><p>对不同类型的组织，其知识管理有不同的需求，实施方法和侧重点也可能不同。但从知识管理体系作为一个通用系统来说，大多数组织可遵循一些通用的、共性的、普适性原则。</p>
+<ul>
+<li>领导作用</li>
+<li>战略导向</li>
+<li>业务驱动</li>
+<li>文化融合</li>
+<li>技术保障</li>
+<li>知识创新</li>
+<li>知识保护</li>
+<li>持续改进</li>
+</ul>
+<p>这些词听起来可能比较虚，但笔者认为这些确实是非常重要的原则。问题的关键在于在具体实施过程中，是否真正落到了实处。象战略导向、业务驱动、文化融合这些原则完全可能决定知识管理项目实施的最终成败。</p>
+<h2 id="知识管理模型"><a href="#知识管理模型" class="headerlink" title="知识管理模型"></a>知识管理模型</h2><p>知识管理模型可以分为概念模型和过程模型两部分。概念模型主要解决知识管理是什么的问题。过程模型主要解决知识管理怎么做的问题，怎样实施知识管理。知识管理模型是框架部分最重要的内容，可以通过两个图来表达这两个模型。</p>
+<h3 id="概念模型"><a href="#概念模型" class="headerlink" title="概念模型"></a>概念模型</h3><p>知识管理的概念模型如下图：</p>
+<p><img src="http://ojfygn4is.bkt.clouddn.com/image/knowledge-concept-model.png?v=2" alt=""></p>
+<p>概念模型主要解决知识管理是什么的问题。在概念模型中，知识被看着可以开发利用的资源，知识管理围绕知识资源展开，是对知识鉴别、创造、获取、存储、共享、应用等活动进行规划和管理。为了成功的开展知识管理工作，需要在组织文化、组织结构与制度、技术设施方面作为保障和支撑。这些支撑要素是知识管理实施的土壤，没有合适的土壤，知识管理工作很难开花结果。</p>
+<h3 id="过程模型"><a href="#过程模型" class="headerlink" title="过程模型"></a>过程模型</h3><p>知识管理的过程模型采用了 ISO 9000 质量管理体系 PDCA 循环思路，即通过 P （Plan，策划）、D （Design，实施）、C （Check，评价）、A （Act，改进）四个过程来实施知识管理。这个过程模型如下图：</p>
+<p><img src="http://ojfygn4is.bkt.clouddn.com/image/knowledge-process-model.png" alt=""></p>
+<p>过程模型的左侧是相关方对知识管理的需求，通过分析知识管理的现状，结合组织战略和业务目标明确知识管理的需求。然后根据需求制定知识管理的目标、对知识管理过程进行策划、制定知识管理战略和实施策略。在实施过程中不断对知识及知识管理的效果进行评价和改进，以达到预期的知识管理目标。</p>
+<h2 id="知识活动"><a href="#知识活动" class="headerlink" title="知识活动"></a>知识活动</h2><p>知识管理把知识作为组织的战略资源，作为一种管理思想和方法体系，它以人为中心，以数据、信息为基础，以知识创造、积累、共享及应用为目标。一旦组织确立了知识管理战略，知识管理活动将成为日常工作的一部分，知识活动以知识资源为中心，不断循环开展。</p>
+<ul>
+<li><p><strong>知识鉴别</strong>：知识鉴别是指的知识需求分析，结合组织的业务流程、产品和服务、战略规划找出组织现有知识及知识缺口，制定出知识发展的目标和计划。</p>
+</li>
+<li><p><strong>知识创造</strong>：知识创造是通过组织全员参与，贯穿在组织业务流程的各个环节中。</p>
+</li>
+<li><p><strong>知识获取</strong>：从组织内部和组织外部多方面对知识进行整理收集。如从客户、竞争对手、供应商、图书馆、互联网等渠道收集知识。另外还可以收购、购买知识或引进相应的人才。</p>
+</li>
+<li><p><strong>知识存储</strong>：利用数据库、知识库、专家黄页等技术手段对知识进行编码存储、分类、索引。</p>
+</li>
+<li><p><strong>知识共享</strong>：通过研讨会、培训、实践社区等形式将知识在组织成员之间、团队之间进行交流共享。使知识由个人经验扩散成组织经验，由个人拥有转变为群体拥有，由知识资源转化为生产力。</p>
+</li>
+<li><p><strong>知识应用</strong>：将知识应用到组织的具体业务活动中以解决各种问题，从而实现组织绩效的提高。</p>
+</li>
+</ul>
+<h2 id="知识管理的支持要素"><a href="#知识管理的支持要素" class="headerlink" title="知识管理的支持要素"></a>知识管理的支持要素</h2><p>在知识管理的概念模型中已经表达了知识管理的三个支持要素。</p>
+<ul>
+<li><p><strong>组织结构与制度：</strong>在组织结构上设定专门的和知识管理活动相关的工作角色和职责。让知识管理工作融入日常业务工作的一部分。并制定知识管理的相关考核和激励制度。</p>
+</li>
+<li><p><strong>组织文化：</strong>人的因素是知识管理实施过程中最重要的因素，知识在很大程度上依赖于人，这需要在组织内营造一种具有激励、归属感、授权、信任、尊敬等机制的文化。</p>
+</li>
+<li><p><strong>信息与通信技术：</strong>充分利用现代信息化与通信技术，使知识活动更加方便高效。信息化及互联网技术发展迅速，这方面已经有很成熟的技术支撑，如数据挖掘、搜索引擎、语义网络、社交网络、IM、博客、Wiki等。需要注意的是，技术只是手段和途径，应时刻牢记技术是为知识管理服务的，不能脱离知识管理的目标和需求而盲目夸大技术的重要性。</p>
+</li>
+</ul>
+<h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><blockquote>
+<p>以上内容就是对标准中的“框架”部分的要点整理。其中的知识管理模型、知识活动是重点内容。对这部分要点的整理可以站在企业实施知识管理的角度，比较全面的了解知识管理所涉及的概念和核心要素，有一个全局的了解。后续篇章会继续对标准的其他部分进行要点整理。</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/03/meta-knowledge-classification-oecd-others/" rel="next" title="元知识基础：OECD对知识的分类及其他">
+                <i class="fa fa-chevron-left"></i> 元知识基础：OECD对知识的分类及其他
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="德行天下" />
+          <p class="site-author-name" itemprop="name">德行天下</p>
+          <p class="site-description motion-element" itemprop="description">读书 思考 写作，心智学徒的进化之路</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标准概况"><span class="nav-number">2.</span> <span class="nav-text">标准概况</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#框架"><span class="nav-number">3.</span> <span class="nav-text">框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#知识管理的基本概念"><span class="nav-number">3.1.</span> <span class="nav-text">知识管理的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#知识的定义"><span class="nav-number">3.1.1.</span> <span class="nav-text">知识的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#知识的特性"><span class="nav-number">3.1.2.</span> <span class="nav-text">知识的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#知识的分类"><span class="nav-number">3.1.3.</span> <span class="nav-text">知识的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#知识管理"><span class="nav-number">3.1.4.</span> <span class="nav-text">知识管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理体系"><span class="nav-number">3.1.5.</span> <span class="nav-text">管理体系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知识管理的目标"><span class="nav-number">3.2.</span> <span class="nav-text">知识管理的目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知识管理的实施原则"><span class="nav-number">3.3.</span> <span class="nav-text">知识管理的实施原则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知识管理模型"><span class="nav-number">3.4.</span> <span class="nav-text">知识管理模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念模型"><span class="nav-number">3.4.1.</span> <span class="nav-text">概念模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过程模型"><span class="nav-number">3.4.2.</span> <span class="nav-text">过程模型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知识活动"><span class="nav-number">3.5.</span> <span class="nav-text">知识活动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知识管理的支持要素"><span class="nav-number">3.6.</span> <span class="nav-text">知识管理的支持要素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后语"><span class="nav-number">4.</span> <span class="nav-text">后语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">德行天下</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
